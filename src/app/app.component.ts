@@ -1,10 +1,20 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
+import { NavbarComponent } from "./navbar.component";
+import { BodyComponent } from "./body.component";
+
+//import { myFooterComponent } from './component.myFooter';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: "my-app",
+  template: ` 
+  <navbar></navbar> 
+  <router-outlet></router-outlet>
+  
+  
+
+  
+  ,`
+  //<div class="container">
+  //<router-outlet></router-outlet>
 })
-export class AppComponent {
-  title = 'app';
-}
+export class AppComponent {}
